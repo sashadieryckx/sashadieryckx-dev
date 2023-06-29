@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sasha Dieryckx</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.min.js" integrity="sha512-Na4qwz8+Hb6JAVf8zFKtPri3XX/Z9/drSpFQuA9hUDnSYLFuu+GU0sfyDYw0SIUkvo/gSw//hCW/CjFJmIIc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="mobile-nav">
+            <div id="logo">
+                <div class="logo">Sasha Dieryckx</div>
+            </div>
+    
+            <div class="toggle-btn">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+    
+            <div class="menu">
+                <div class="list">
+                    <ul>
+                        <li><a class="hover-over" href="home.html"><span>Home</span></a></li>
+                        <li><a class="hover-over" href="about.html"><span>About</span></a></li>
+                        <li><a class="hover-over" href="portfolio.html"><span>Portfolio</span></a></li>
+                        <li><a class="hover-over" href="shop.html"><span>Shop</span></a></li>
+                        <li><a class="hover-over" href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>       
+        </div>
+        <div id="nav">
+            <div id="logo">
+                <div class="logo">Sasha Dieryckx</div>
+            </div>
+
+            <div class="menu2">
+                <div class="list2">
+                    <ul>
+                        <li><a href="home.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>
+                        <li><a href="portfolio.html"><span>Portfolio</span></a></li>
+                        <li><a href="shop.html"><span>Shop</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+    <div class="main-content-contact" id="main-content" data-scroll-section>
+        <div class="lgit" data-scroll>
+
+            <h4 class="lets" data-scroll data-scroll-speed="1">Lets</h4>
+            <h4 class="get" data-scroll data-scroll-speed="2">get in</h4>
+            <h4 class="touch" data-scroll data-scroll-speed="3">touch!</h4>
+
+            <div data-scroll data-scroll-speed="8">
+                <div class="msg" data-scroll data-scroll-speed="20" data-scroll-direction="horizontal">
+                    <p>Let's turn your ideas into a reality! Send me a detailed message regarding your project and I will get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="msg2" data-scroll data-scroll-speed="5">
+                <p>Let's turn your ideas into a reality! Send me a detailed message regarding your project and I will get back to you as soon as possible!</p>
+            </div>
+        </div>
+        <div class="frm" data-scroll data-scroll-speed="4">
+            <form action="https://formsubmit.co/sashadieryckxmgmt@gmail.com" id="cntct" name="cntct" method="POST">
+
+                <input type="hidden" name="_captcha" value="false"/>
+
+                <!--SUCCESS MESSAGE-->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/form_action_page.html"/>
+
+                <label for="firstname">First Name</label><br/>
+                    <input type="text" id="firstname" name="firstname" required/><br/><br/>
+                <label for="lastname">Last Name</label><br/>
+                    <input type="text" id="lastname" name="lastname"/><br/><br/>
+                <label for="email">Email</label><br/>
+                    <input type="text" id="email" name="email" required/><br/><br/>
+                <label for="phone">Phone Number</label><br/>
+                    <input type="text" id="phone" name="phone"/><br/><br/>
+                <label for="subject">Subject</label><br/>
+                    <input type="text" id="subject" name="subject"/><br/><br/>
+                <label for="medium">Medium</label><br/>
+                    <select name="medium" id="medium" form="cntct">
+                        <option value="select">Select</option>
+                        <option value="videography">Videography</option>
+                        <option value="photography">Photography</option>
+                        <option value="graphicdesign">Graphic Design</option>
+                        <option value="webdesign">Web Design</option>
+                        <option value="projectmanagement">Project Management</option>
+                        <option value="other">Other</option>
+                    </select><br/><br/>
+                <label for="message">Message</label><br/>
+                    <textarea type="textarea" id="message" name="message"></textarea><br/><br/>
+                <button type="submit" form="cntct" id="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-txt">Sasha Dieryckx - 2022&#169</div>
+    </footer>
+
+    <script src="js/default.js"></script>
+</body>
+</html>
